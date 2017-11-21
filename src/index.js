@@ -11,6 +11,19 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
 
-const newMarker = markerFactory('activities', [-74.009, 40.705])
+const newMarker = markerFactory('activities', [-74.009, 40.705]);
 
-newMarker.addTo(map)
+newMarker.addTo(map);
+
+const itineraryToggle = document.getElementById('nav-itinerary');
+const itinerary = document.getElementsByClassName('itinerary')[0];
+const activitiesToggle = document.getElementById('nav-activities');
+const activities = document.getElementsByClassName('activities')[0];
+
+
+itineraryToggle.addEventListener('click', function() {
+  itinerary.classList.toggle('hidden');
+});
+activitiesToggle.addEventListener('click', function() {
+  activities.classList.toggle('hidden');
+});

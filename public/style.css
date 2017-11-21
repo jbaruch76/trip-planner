@@ -45,6 +45,7 @@ nav {
   z-index: 1;
   background-color: #90caf9;
   padding: 1em;
+  transition: opacity 1s;
 }
 
 .activity-type {
@@ -59,6 +60,7 @@ nav {
   width: 20vw;
   z-index: 1;
   background-color: #004d40;
+  transition: opacity 1s;
 }
 
 #map {
@@ -67,7 +69,9 @@ nav {
   z-index: 0;
 }
 
-
+.hidden {
+  opacity: 0;
+}
 
 select.select-activities {
   width: 8vw;

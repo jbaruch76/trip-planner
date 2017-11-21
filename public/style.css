@@ -6,8 +6,69 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #C1B5AD;
+
 }
+
+header {
+  position: fixed;
+  display: flex;
+  background-color: #252525;
+  color: white;
+  height: 8vh;
+  width: 100vw;
+  padding: 10px;
+  z-index: 1;
+}
+
+.logo {
+  flex: 1 0 0;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.activities {
+  position: fixed;
+  top: 12vh;
+  left: 78vw;
+  height: 30vh;
+  width: 20vw;
+  z-index: 1;
+  background-color: #90caf9;
+  padding: 1em;
+}
+
+.activity-type {
+  flex: 1 1 1em;
+}
+
+.itinerary {
+  position: fixed;
+  top: 50vh;
+  left: 78vw;
+  height: 30vh;
+  width: 20vw;
+  z-index: 1;
+  background-color: #004d40;
+}
+
 #map {
   height: 100vh;
   width: 100vw;
+  z-index: 0;
+}
+
+
+
+select.select-activities {
+  width: 8vw;
 }

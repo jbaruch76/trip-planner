@@ -7,6 +7,38 @@
     <script src="./bundle.js" defer></script>
   </head>
   <body>
+    <header>
+      <div class="logo">Our Trip Planner</div>
+      <nav class='navbar'>
+        <div class="nav-item">About</div>
+        <div class="nav-item">Contact</div>
+        <div class="nav-item">Activities</div>
+        <div class="nav-item">Itinerary</div>
+      </nav>
+    </header>
+    <div class="activities container">
+      <form action="select" class="activity-type">
+        <label for="hotels">Hotels</label>
+        <br/>
+        <select class='select-activities' name="hotels" id="select-hotels"></select>
+        <button class=''>+</button>
+      </form>
+      <form action="select" class="activity-type">
+          <label for="restaurants">Restaurants</label>
+          <br/>
+          <select class='select-activities' name="restaurants" id="select-restaurants"></select>
+          <button class=''>+</button>
+      </form>
+      <form action="select" class="activity-type">
+          <label for="activities">Activities</label>
+          <br/>
+          <select class='select-activities' name="activities" id="select-activities"></select>
+          <button class=''>+</button>
+      </form>
+    </div>
+    <div class="itinerary container">
+
+    </div>
     <div id="map">
       <div class='marker'></div>
     </div>

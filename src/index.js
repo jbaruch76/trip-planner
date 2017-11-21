@@ -1,3 +1,5 @@
+const markerFactory = require('./marker')
+
 const mapboxgl = require("mapbox-gl");
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiamJhcnVjaDc2IiwiYSI6ImNqYTl1OTFlbjBhbHQycW5jYzRmZm9mcnMifQ.ZsNmT2-jY_HnF6xZSJfWgw';
@@ -8,3 +10,7 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
+
+const newMarker = markerFactory('activities', [-74.009, 40.705])
+
+newMarker.addTo(map)
